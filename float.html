@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text and Image Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 2rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .text {
+      flex: 1 1 45%;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .image {
+      flex: 1 1 45%;
+      text-align: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="text">
+      <h2>Lorem Ipsum</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in suscipit odio.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Integer nec velit eu nisi sagittis ultrices. Quisque porta, leo a pulvinar pharetra,
+        augue nulla fermentum elit, in rhoncus tortor ligula non libero.
+      </p>
+    </div>
+    <div class="image">
+     <img src="./Babu Bhaiya.jpg">
+    </div>
+  </div>
+
+</body>
+</html> 
