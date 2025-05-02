@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+    <title>Responsive Form</title>
+</head>
+<body>
+
+<form>
+<h2>Registration Form</h2>
+<label for="firstName">First Name:</label>
+<input type="text" id="firstName" name="firstName">
+
+<label for="lastName">Last Name:</label>
+<input type="text" id="lastName" name="lastName">
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" minlength="8">
+
+<div class="gender-group">
+<label>Gender:</label>
+<label for="male">
+<input type="radio" id="male" name="gender" value="male"> Male
+</label>
+<label for="female">
+<input type="radio" id="female" name="gender" value="female"> Female
+</label>
+</div>
+
+<label for="color">Favorite Color:</label>
+<select id="color" name="color">
+<option disabled selected>Choose your color</option>
+<option value="one">Red</option>
+<option value="two">Yellow</option>
+<option value="three">Blue</option>
+<option value="four">Green</option>
+</select>
+
+<label for="comments">Comments:</label>
+<textarea id="comments" name="comments"></textarea>
+
+<label>
+<input type="checkbox" name="agree"> I agree
+</label>
+
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
